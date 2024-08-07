@@ -1,0 +1,250 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+.container{
+  color: #38b6ff;
+
+}
+
+body {
+  
+  background-color: #cccccca3 !important;
+  font-weight: 400;
+  font-family: 'Fira Sans', sans-serif;
+}
+.carousel{
+  padding: 5rem;
+ 
+  height: 100vh;
+  width:100vw ;
+}
+
+.box{
+  background-color: white;
+  /*height: 300px;*/
+  border-color: #38b6ff !important;
+  
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+/* Aumentamos la especificidad */
+.card-body.text-primary.color-base {
+  color: #38b6ff !important; /* Reemplaza con el color que desees */
+ 
+ 
+
+}
+
+.card{
+  border-color: #38b6ff !important;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid #38b6ff; /* Reemplaza con el color y grosor de borde que desees */
+  padding: 10px; /* Añade relleno si es necesario */
+  margin: 0px; /* Añade margen si es necesario */
+  border-radius: 6px; 
+}
+
+.card.mt-4.border-primary.color-base{
+  border-color: #38b6ff !important;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #38b6ff; /* Reemplaza con el color y grosor de borde que desees */
+  padding: 20px; /* Añade relleno si es necesario */
+  margin: 100; /* Añade margen si es necesario */
+  border-radius: 5px; 
+  font-family: 'Fira Sans', sans-serif;
+}
+.box h3{
+  color: #38b6ff;
+  text-align: center;
+}
+.box.borde{
+  border: 2px solid #38b6ff; /* Reemplaza con el color y grosor de borde que desees */
+  padding: 10px; /* Añade relleno si es necesario */
+  margin: 10px; /* Añade margen si es necesario */
+  border-radius: 5px; 
+}
+
+.boton-sig{
+  display: block;
+  margin: 20px auto; /* Centrar el botón horizontalmente */
+  padding: 10px 20px;
+  background-color: white; /* Color de fondo */
+  color: #38b6ff; /* Color del texto */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.boton{
+  display: block;
+  margin: 20px auto; /* Centrar el botón horizontalmente */
+  padding: 10px 20px;
+  background-color: #38b6ff; /* Color de fondo */
+  color: white; /* Color del texto */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+.box p{
+  color: black;
+  text-align: left;
+}
+.slick-slide div{
+  margin: 0 1rem;
+
+}
+
+.container-login{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 200px;
+  background: #f0f0f0;
+  padding-bottom: 30px;
+  
+}
+
+.header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 9px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.inputs{
+  margin-top: 55px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.input{
+  display: flex;
+  align-items: center;
+  margin: auto;
+  width: 480px;
+  height: 80px;
+  background: #f0f0f0;
+  border-radius: 6px;
+}
+
+
+
+
+
+
+
+.btn-primary{
+  background-color: #38b6ff !important;
+  color: white !important;
+  justify-content: center;
+}
+
+.header-nav {
+
+  color: white!important;
+  
+  }
+
+  
+
+  .titulo{
+    color:#154660;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+}  
+
+.centrar{
+  
+  display: flex;
+  justify-content: center;
+}
+
+.notificacion-exitosa{
+  background-color: #54e464;
+  color: black;
+
+  
+}
+
+.notificacion-advertencia{
+  background-color: #f3c30c;
+  color: black;
+}
+
+.fila-seleccionada {
+  background-color: rgb(173, 176, 169); 
+}
+
+.mapa-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+/* src/components/StoreMap.css */
+.store-map {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+  padding: 20px;
+}
+
+.section {
+  background-color: lightgray;
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.section.highlight {
+  background-color: yellow;
+}
+
+.entrance {
+  grid-column: 1 / span 5;
+  background-color: lightgreen;
+  padding: 20px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.exit {
+  grid-column: 1 / span 5;
+  background-color: lightcoral;
+  padding: 20px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.store-map-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+
