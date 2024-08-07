@@ -53,7 +53,7 @@ export const Registro = () => {
           
       
     try {
-      const peticion = await fetch("http://localhost:3900/api/ingresarUsuario", {
+      const peticion = await fetch("https://deploy-back-six.vercel.app/api/ingresarUsuario", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
