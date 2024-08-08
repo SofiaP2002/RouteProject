@@ -32,7 +32,7 @@ export const InicioSesion = () => {
     e.preventDefault();
 
     try {
-      const peticion = await fetch("${window.location.origin}/api/iniciarSesion", {
+      const peticion = await fetch("https://deploy-back-six.vercel.app/api/iniciarSesion", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
