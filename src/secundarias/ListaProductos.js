@@ -67,7 +67,7 @@ export const ListaProductos = () => {
 
       const fetchProductos = async () => {
         console.log('obteniendo lista')
-        const res = await fetch('https://deploy-back-six.vercel.app/api/obtenerProductos');
+        const res = await fetch('${window.location.origin}/api/obtenerProductos');
         const data = await res.json();
         console.log(data);
         setlistaProductos(data);
