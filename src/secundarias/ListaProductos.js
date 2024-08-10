@@ -43,6 +43,13 @@ export const ListaProductos = () => {
           slidesToShow: 1,
           slidesToScroll: 1
         }
+      },
+      {
+        breakpoint: 350,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
       }
     ]
   }
@@ -61,7 +68,11 @@ export const ListaProductos = () => {
         fetchProductos();
       }, []); 
 
-      
+      const productoAgrupado= listaProductos.reduce((grupo,producto)=>{
+        grupo[producto.seccion]=grupo[producto.seccion] || [];
+        grupo[producto.seccion].push(producto);
+        return grupo;
+      },{})
       
   return (
     
@@ -75,14 +86,16 @@ export const ListaProductos = () => {
  <div className='carousel '>
  
     <Slider {...settings}>
-    {listaProductos.map(producto =>(
-      <div className='card' >
-        <h3 className='text-center' >{producto.seccion}</h3>
-      <img src={producto.imagen} alt='' className='w-100'/>
-      <div className='card-body'>
+    {Object.keys(productoAgrupado).map(seccion =>(
+      <div className='card' key={seccion}>
+        <h3 className='text-center text-primary color-base' >{seccion}</h3>
+        {productoAgrupado[seccion].map((producto,categoria)=>(
+         <div className='card-body' key={categoria}>
+          <img src={producto.imagen} alt='' className='w-100'/>
+   
         <h6>Nombre: {producto.nombre_producto}</h6>
         <h6>Pasillo: {producto.pasillo}</h6>
-      </div>
+      </div>))}
       </div>
     ))}
     </Slider>
