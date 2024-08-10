@@ -52,7 +52,11 @@ body {
   padding: 10px; /* Añade relleno si es necesario */
   margin: 0px; /* Añade margen si es necesario */
   border-radius: 6px; 
+  overflow-y: auto;
+  max-height: 500px;
+ 
 }
+
 
 .card.mt-4.border-primary.color-base{
   border-color: #38b6ff !important;
