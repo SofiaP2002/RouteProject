@@ -87,10 +87,10 @@ export const ListaProductos = () => {
  
     <Slider {...settings}>
     {Object.keys(productoAgrupado).map(seccion =>(
-      <div className='card' key={seccion}>
-        <h3 className='text-center text-primary color-base' >{seccion}</h3>
+      <div className='card-carousel' key={seccion}>
+        <h3 className='text-center color-base' >{seccion}</h3>
         {productoAgrupado[seccion].map((producto,categoria)=>(
-         <div className='card-body' key={categoria}>
+         <div className='card-body' key={categoria} >
           <img src={producto.imagen} alt='' className='w-100'/>
    
         <h6>Nombre: {producto.nombre_producto}</h6>
@@ -101,6 +101,7 @@ export const ListaProductos = () => {
     </Slider>
     </div>
       </>
+    
     
   
   )
