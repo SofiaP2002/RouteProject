@@ -15,6 +15,8 @@ body {
   font-weight: 400;
   font-family: 'Fira Sans', sans-serif;
 }
+
+
 .carousel{
   padding: 5rem;
  
@@ -44,7 +46,11 @@ body {
 
 }
 
-.card{
+.color-base{
+  color: #38b6ff !important;
+}
+
+.card-carousel{
   border-color: #38b6ff !important;
   justify-content: center;
   align-items: center;
@@ -54,9 +60,22 @@ body {
   border-radius: 6px; 
   overflow-y: auto;
   max-height: 500px;
+ background-color: white;
  
 }
 
+.card{
+  border-color: #38b6ff !important;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid #38b6ff; /* Reemplaza con el color y grosor de borde que desees */
+  padding: 10px; /* Añade relleno si es necesario */
+  margin: 0px; /* Añade margen si es necesario */
+  border-radius: 6px; 
+  
+  max-height: 500px;
+ 
+}
 
 .card.mt-4.border-primary.color-base{
   border-color: #38b6ff !important;
@@ -68,6 +87,8 @@ body {
   border-radius: 5px; 
   font-family: 'Fira Sans', sans-serif;
 }
+
+
 .box h3{
   color: #38b6ff;
   text-align: center;
@@ -249,6 +270,46 @@ body {
   width: 100%;
   height: 100%;
   pointer-events: none;
+}
+
+.content {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.header {
+  font-size: 30px;
+}
+
+.img-body img {
+  display: flex;
+  margin: 0 auto;
+  height: 40vh;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.img-body {
+  width: 400px;
+  aspect-ratio: 1/1;
+  outline-color: red;
+  display: inline-block;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  height: 80vh;
+  border-color: white;
+}
+
+.responsive{
+  width: 100%;
+  height: auto;
+}
+
+.slick-slide img {
+  width: calc(100% - 10px) !important;
 }
 
 
