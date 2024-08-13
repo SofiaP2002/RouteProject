@@ -18,8 +18,7 @@ body {
 
 
 .carousel{
-  padding: 5rem;
- 
+  padding: 2.5rem;
   height: 100vh;
   width:100vw ;
 }
@@ -29,6 +28,11 @@ body {
   /*height: 300px;*/
   border-color: #38b6ff !important;
   
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #38b6ff !important;
 }
 
 .error-message {
@@ -50,19 +54,21 @@ body {
   color: #38b6ff !important;
 }
 
-.card-carousel{
+.card-carousel {
   border-color: #38b6ff !important;
   justify-content: center;
   align-items: center;
-  border: 5px solid #38b6ff; /* Reemplaza con el color y grosor de borde que desees */
-  padding: 10px; /* Añade relleno si es necesario */
-  margin: 0px; /* Añade margen si es necesario */
-  border-radius: 6px; 
+  border: 5px solid #38b6ff;
+  padding: 4px;
+  margin: 0px;
+  border-radius: 6px;
   overflow-y: auto;
   max-height: 500px;
- background-color: white;
- 
+  background-color: white;
+  max-width: 700px;
+
 }
+
 
 .card{
   border-color: #38b6ff !important;
