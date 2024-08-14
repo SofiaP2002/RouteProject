@@ -12,17 +12,17 @@ export const ListaProductos = () => {
     imagen:''
   });
   
-  var settings = {
-    dots: false,
-    infinite: false,
+ var settings = {
+   
     speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToShow: 3,
+    slidesToScroll: 3,
     initialSlide: 0,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
+          initialSlide: 0,
           slidesToShow: 3,
           slidesToScroll: 3,
           /*infinite: true,
@@ -30,27 +30,15 @@ export const ListaProductos = () => {
         }
       },
       {
-        breakpoint: 600,
+        breakpoint: 768,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
+          initialSlide: 0,
           slidesToShow: 1,
           slidesToScroll: 1
+          
         }
       },
-      {
-        breakpoint: 350,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
+      
     ]
   }
 
