@@ -19,8 +19,9 @@ body {
 
 .carousel{
   padding: 2.5rem;
-  height: 100vh;
-  width:100vw ;
+  height: auto; /* Ajusta la altura según el contenido */
+  width: 100%; /* Asegúrate de que el carrusel ocupa todo el ancho disponible */
+  box-sizing: border-box; /* Incluye padding y border en el ancho total */
 }
 
 .box{
@@ -134,7 +135,7 @@ body {
   text-align: left;
 }
 .slick-slide div{
-  margin: 0 1rem;
+  margin: 0 0.5rem;
 
 }
 
@@ -315,7 +316,8 @@ body {
 }
 
 .slick-slide img {
-  width: calc(100% - 10px) !important;
+  width: 100% !important;
+  height: auto;
 }
 
 
