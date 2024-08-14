@@ -14,27 +14,27 @@ export const ListaProductos = () => {
   
  var settings = {
    
-    speed: 500,
+     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 3,
-    initialSlide: 0,
+    initialSlide:0,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          initialSlide: 0,
-          slidesToShow: 3,
-          slidesToScroll: 3,
+          initialSlide:0,
+          slidesToShow: 4,
+          slidesToScroll:1
           /*infinite: true,
           dots: true*/
         }
       },
       {
-        breakpoint: 768,
+        breakpoint: 780,
         settings: {
-          initialSlide: 0,
+          initialSlide:1,
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll:1
           
         }
       },
